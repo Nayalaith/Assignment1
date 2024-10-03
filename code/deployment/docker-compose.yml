@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ../..               # Set context to two levels up to include 'models'
+      dockerfile: code/deployment/api/Dockerfile   # Correct path for the api Dockerfile
+    ports:
+      - "8000:8000"
+
+  app:
+    build:
+      context: ../..               # Same context, adjust if app has its own location
+      dockerfile: code/deployment/app/Dockerfile   # Use app-specific Dockerfile
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api                        # app will start after api is up
+
