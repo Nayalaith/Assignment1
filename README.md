@@ -1,4 +1,4 @@
-# Movie Recommendation System
+# Movies Recommendation System
 
 A Transformer-based movie recommendation system using BERT embeddings to suggest movies across the five major streaming platforms. Built with **FastAPI** for API endpoints and **Streamlit** for frontend deployment, the system uses deep learning and transformer-based techniques to provide personalized movie recommendations.
 
