@@ -32,8 +32,9 @@ The project is organized as follows:
 │   │   ├── api                  # FastAPI code
 │   │   ├── app                  # Streamlit app code
 │   │   └── Dockerfile.yml       # Docker setup for both API and app
-│   └── models
-│       └── *.h5                 # Trained BERT embeddings for recommendation
+│   └── model
+│       └── Recommendation_system.py # The main recommendation system python code 
+|── models ── *.h5                 # Trained BERT embeddings for recommendation
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project documentation
 
